@@ -23,3 +23,23 @@ yarn-debug.log*
 yarn-error.log*
 .vscode
 .env
+
+# Terraform (do NOT ignore .terraform.lock.hcl - commit it for reproducible builds)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/crash.log
+terraform/crash.*.log
+
+# Kubernetes
+.kube/
+kubeconfig
+
+# Minikube
+.minikube/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
