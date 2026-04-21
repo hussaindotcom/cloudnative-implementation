@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: todo
+data:
+  REACT_APP_API_ENDPOINT: "http://todo-api:8080"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+  namespace: todo
+data:
+  DB_NAME: "test"
+  DB_HOST: "mongodb"
+  DB_CONNECTION: "mongodb://appuser:apppass@mongodb:27017/test"
